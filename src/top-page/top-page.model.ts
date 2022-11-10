@@ -1,4 +1,4 @@
-export enum TopLevelCategories {
+export enum Categories {
   Courses,
   Services,
   Books,
@@ -18,7 +18,8 @@ export interface Advantage {
 }
 
 export class TopPageModel {
-  category: TopLevelCategories;
+  _id: string;
+  categories: Categories;
   nestedCategory: string;
   title: string;
   currentCategory: string;
